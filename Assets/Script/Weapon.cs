@@ -32,8 +32,10 @@ public class Weapon : MonoBehaviour
 
     public enum WeaponModel
     {
-        Pistal1911,
-        M4_8
+        Pistol1911,
+        M4_8,
+        AK47,
+        Uzi
     }
 
     public WeaponModel thisWeaponModel;
@@ -100,10 +102,6 @@ public class Weapon : MonoBehaviour
                 }
             }
 
-            if (AmmoManager.instance.ammoDisplay != null)
-            {
-                AmmoManager.instance.ammoDisplay.text = $"{bulletsLeft / bulletPerBurst}/{magazineSize / bulletPerBurst}";
-            } 
         }
     }
 

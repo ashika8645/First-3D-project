@@ -32,10 +32,19 @@ public class SoundManager : MonoBehaviour
     {
         switch (weapon)
         {
-            case Weapon.WeaponModel.Pistal1911:
+            case Weapon.WeaponModel.Pistol1911:
                 ShootingChannel.PlayOneShot(colt1911Shot);
                 break;
+
             case Weapon.WeaponModel.M4_8:
+                ShootingChannel.PlayOneShot(M4_8Shot);
+                break;
+
+            case Weapon.WeaponModel.AK47:
+                ShootingChannel.PlayOneShot(M4_8Shot);
+                break;
+
+            case Weapon.WeaponModel.Uzi:
                 ShootingChannel.PlayOneShot(M4_8Shot);
                 break;
         }
@@ -46,10 +55,19 @@ public class SoundManager : MonoBehaviour
     {
         switch (weapon)
         {
-            case Weapon.WeaponModel.Pistal1911:
+            case Weapon.WeaponModel.Pistol1911:
                 emptyMagazineChannel.PlayOneShot(colt1911EmptyMagazine);
                 break;
+
             case Weapon.WeaponModel.M4_8:
+                emptyMagazineChannel.PlayOneShot(M4_8EmptyMagazine);
+                break;
+
+            case Weapon.WeaponModel.AK47:
+                emptyMagazineChannel.PlayOneShot(M4_8EmptyMagazine);
+                break;
+
+            case Weapon.WeaponModel.Uzi:
                 emptyMagazineChannel.PlayOneShot(M4_8EmptyMagazine);
                 break;
         }
@@ -60,10 +78,19 @@ public class SoundManager : MonoBehaviour
     {
         switch (weapon)
         {
-            case Weapon.WeaponModel.Pistal1911:
+            case Weapon.WeaponModel.Pistol1911:
                 reloadingChannel.PlayOneShot(colt1911Reloading);
                 break;
+
             case Weapon.WeaponModel.M4_8:
+                reloadingChannel.PlayOneShot(M4_8SReloading);
+                break;
+
+            case Weapon.WeaponModel.AK47:
+                reloadingChannel.PlayOneShot(M4_8SReloading);
+                break;
+
+            case Weapon.WeaponModel.Uzi:
                 reloadingChannel.PlayOneShot(M4_8SReloading);
                 break;
         }

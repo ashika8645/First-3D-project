@@ -5244,7 +5244,7 @@ MonoBehaviour:
   shootingDelay: 0.1
   bulletPerBurst: 1
   burstBulletsLeft: 0
-  spreadIntensity: 1
+  spreadIntensity: 0.5
   bulletPrefab: {fileID: 4674828264371071478, guid: 94da25bc51f239f498724cb8482ca322, type: 3}
   bulletSpawn: {fileID: 2602207228382293498}
   bulletVelocity: 400
@@ -5256,7 +5256,7 @@ MonoBehaviour:
   isReloading: 0
   spawnPosition: {x: 0.3, y: 2.2, z: 1.5}
   spawnRotation: {x: 0, y: 180, z: 0}
-  thisWeaponModel: 1
+  thisWeaponModel: 3
   currentShootingMode: 2
 --- !u!114 &5726689709209183686
 MonoBehaviour:
