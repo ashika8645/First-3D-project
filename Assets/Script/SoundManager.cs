@@ -7,6 +7,7 @@ public class SoundManager : MonoBehaviour
     public AudioSource ShootingChannel;
     public AudioSource emptyMagazineChannel;
     public AudioSource reloadingChannel;
+    public AudioSource grenadeExplosion;
 
     public AudioClip colt1911Shot;
     public AudioClip M4_8Shot;
@@ -16,6 +17,8 @@ public class SoundManager : MonoBehaviour
 
     public AudioClip colt1911EmptyMagazine;
     public AudioClip M4_8EmptyMagazine;
+
+    public AudioClip grenadeExpl;
     private void Awake()
     {
         if (instance != null && instance != this)

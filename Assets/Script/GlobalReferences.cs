@@ -7,6 +7,8 @@ public class GlobalReferences : MonoBehaviour
     public GameObject bulletImpactEffectPrefab;
 
     public GameObject grenadeExplosionEffectl;
+    public GameObject smokeEplosionEffectl;
+
     private void Awake()
     {
         if (instance != null && instance != this)

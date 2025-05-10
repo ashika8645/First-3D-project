@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6511826798823862419}
   - component: {fileID: 2920968822445482537}
   - component: {fileID: 3068257625564155556}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Pin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -98,7 +98,7 @@ GameObject:
   - component: {fileID: 7387230979000910517}
   - component: {fileID: 3964808678698775327}
   - component: {fileID: 7153149665008412815}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: 01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -188,7 +188,7 @@ GameObject:
   - component: {fileID: 6805409202464855389}
   - component: {fileID: 4849148696090840199}
   - component: {fileID: 7386971213736737985}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Grenade
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -280,7 +280,7 @@ MonoBehaviour:
   damageRadius: 20
   explosionForce: 5000
   hasBeenThrown: 0
-  throwableType: 0
+  throwableType: 1
 --- !u!114 &6805409202464855389
 MonoBehaviour:
   m_ObjectHideFlags: 0

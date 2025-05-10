@@ -14,7 +14,9 @@ public class Throwable : MonoBehaviour
 
     public enum ThrowableType
     {
-        Grenade
+        None,
+        Grenade,
+        Smoke
     }
 
     public ThrowableType throwableType;
@@ -51,6 +53,28 @@ public class Throwable : MonoBehaviour
             case ThrowableType.Grenade:
                 GrenadeEffect();
                 break;
+
+            case ThrowableType.Smoke:
+                SmokeEffect();
+                break;
+        }
+    }
+
+    private void SmokeEffect()
+    {
+        GameObject smokeEffect = GlobalReferences.instance.smokeEplosionEffectl;
+        Instantiate(smokeEffect, transform.position, transform.rotation);
+
+        SoundManager.instance.grenadeExplosion.PlayOneShot(SoundManager.instance.grenadeExpl);
+
+        Collider[] collider = Physics.OverlapSphere(transform.position, damageRadius);
+        foreach (Collider objectInRange in collider)
+        {
+            Rigidbody rb = objectInRange.GetComponent<Rigidbody>();
+            if (rb != null)
+            {
+
+            }
         }
     }
 
@@ -58,6 +82,8 @@ public class Throwable : MonoBehaviour
     {
         GameObject explosionEffect = GlobalReferences.instance.grenadeExplosionEffectl;
         Instantiate(explosionEffect, transform.position, transform.rotation);
+
+        SoundManager.instance.grenadeExplosion.PlayOneShot(SoundManager.instance.grenadeExpl);
 
         Collider[] collider = Physics.OverlapSphere(transform.position, damageRadius);
         foreach (Collider objectInRange in collider)

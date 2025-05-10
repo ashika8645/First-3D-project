@@ -69,6 +69,12 @@ public class Weapon : MonoBehaviour
     {
         if (isActiveWeapon)
         {
+
+            foreach (Transform child in transform)
+            {
+               child.gameObject.layer = LayerMask.NameToLayer("WeaponRender");
+            }
+
             if (Input.GetMouseButtonDown(1)) 
             {
                 isADS = !isADS; 
@@ -90,8 +96,6 @@ public class Weapon : MonoBehaviour
                 }
             }
 
-
-            GetComponent<BoxCollider>().enabled = false;
             GetComponent<Outline>().enabled = false;
 
             if (currentShootingMode == ShootingMode.Auto)
@@ -127,6 +131,13 @@ public class Weapon : MonoBehaviour
                 }
             }
 
+        }
+        else
+        {
+            foreach (Transform child in transform)
+            {
+                child.gameObject.layer = LayerMask.NameToLayer("Default");
+            }
         }
     }
 
@@ -211,29 +222,6 @@ public class Weapon : MonoBehaviour
         readyToShot = true;
         allowReset = true;  
     }
-
-    //public Vector3 CalculateDirectionAndSpread()
-    //{
-    //    Ray ray = Camera.main.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0.5f));
-    //    RaycastHit hit;
-
-    //    Vector3 targetPoint;
-    //    if (Physics.Raycast(ray, out hit))
-    //    {
-    //        targetPoint = hit.point;
-    //    }
-    //    else
-    //    {
-    //        targetPoint = ray.GetPoint(100);
-    //    }
-
-    //    Vector3 direction = targetPoint - bulletSpawn.position;
-
-    //    float x = UnityEngine.Random.Range(-spreadIntensity, spreadIntensity);
-    //    float y = UnityEngine.Random.Range(-spreadIntensity, spreadIntensity);
-
-    //    return direction + new Vector3(x, y, 0);
-    //}
 
     public Vector3 CalculateDirectionAndSpread()
     {

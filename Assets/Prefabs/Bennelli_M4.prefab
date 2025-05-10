@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: -4562639023845119340}
   - component: {fileID: -7962989268060883791}
   - component: {fileID: 6475239030292879185}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Bennelli_M4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -110,6 +110,7 @@ MonoBehaviour:
   bulletPerBurst: 3
   burstBulletsLeft: 0
   spreadIntensity: 0
+  spreadIntensityCurrent: 0
   bulletPrefab: {fileID: 0}
   bulletSpawn: {fileID: 0}
   bulletVelocity: 30
@@ -174,7 +175,7 @@ GameObject:
   - component: {fileID: 1650318630578261189}
   - component: {fileID: 4042335528100068300}
   - component: {fileID: 8210373656420090888}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Pump
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -260,7 +261,7 @@ GameObject:
   - component: {fileID: 545972051847868174}
   - component: {fileID: 38926302080704391}
   - component: {fileID: 7893765503981850055}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Trigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3813553876313371451}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: BulletSpawn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43,7 +43,7 @@ GameObject:
   - component: {fileID: 6128608098689503031}
   - component: {fileID: 8622776656740252962}
   - component: {fileID: 3367854810411787532}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Mag
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -129,7 +129,7 @@ GameObject:
   - component: {fileID: 1105257142053976672}
   - component: {fileID: 4480215184418021634}
   - component: {fileID: 2498522669496464174}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Trigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -215,7 +215,7 @@ GameObject:
   - component: {fileID: 7053131246445806639}
   - component: {fileID: 5303811493704862639}
   - component: {fileID: 787079162624066586}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Bolt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -305,8 +305,7 @@ GameObject:
   - component: {fileID: 7875445059195676764}
   - component: {fileID: 2227931168970555275}
   - component: {fileID: 1531654456476282445}
-  - component: {fileID: -7530851208951863164}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: AK74
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -479,33 +478,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.033782385, y: 0.1667685, z: 0.7707256}
   m_Center: {x: -0.0017576693, y: -0.0362125, z: -0.06259711}
---- !u!54 &-7530851208951863164
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4356141656134077826}
-  serializedVersion: 4
-  m_Mass: 50
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 1
 --- !u!1 &4546816078830052142
 GameObject:
   m_ObjectHideFlags: 0
@@ -517,7 +489,7 @@ GameObject:
   - component: {fileID: 7111287973235628282}
   - component: {fileID: 8616601903743284808}
   - component: {fileID: 4266956378347661804}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: MuzzleFlashEffect
   m_TagString: Untagged
   m_Icon: {fileID: 0}

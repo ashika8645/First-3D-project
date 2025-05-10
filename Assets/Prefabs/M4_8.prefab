@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3453838960898552336}
   - component: {fileID: 409139720852558742}
   - component: {fileID: 6295976580204344862}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Rear_Sight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -101,8 +101,7 @@ GameObject:
   - component: {fileID: 7870192010600644672}
   - component: {fileID: 5536853875468645031}
   - component: {fileID: 3025739295358010174}
-  - component: {fileID: -2741093869606425328}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: M4_8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -277,33 +276,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.0597421, y: 0.17664655, z: 0.7236116}
   m_Center: {x: -0.004013397, y: 0.008912883, z: 0.023460403}
---- !u!54 &-2741093869606425328
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2350962303821651486}
-  serializedVersion: 4
-  m_Mass: 50
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 1
 --- !u!1 &3585376208340427459
 GameObject:
   m_ObjectHideFlags: 0
@@ -315,7 +287,7 @@ GameObject:
   - component: {fileID: 375762730733650151}
   - component: {fileID: 5390257261839776587}
   - component: {fileID: 700381531668056674}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: MuzzleFlashEffect
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5101,7 +5073,7 @@ GameObject:
   - component: {fileID: 7341075075426994670}
   - component: {fileID: 3381476120260608179}
   - component: {fileID: 8430238699215101350}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Bolt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5187,7 +5159,7 @@ GameObject:
   - component: {fileID: 7421750642548896055}
   - component: {fileID: 4756123111492023530}
   - component: {fileID: 4951027584973699635}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Mag
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5273,7 +5245,7 @@ GameObject:
   - component: {fileID: 4966188984497248578}
   - component: {fileID: 8918293977278075793}
   - component: {fileID: 1858533362482474189}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Trigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5357,7 +5329,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 696669313376631102}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: BulletSpawn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5391,7 +5363,7 @@ GameObject:
   - component: {fileID: 1137434965063163442}
   - component: {fileID: 6823713068566639915}
   - component: {fileID: 1567989310971482684}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Sight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
