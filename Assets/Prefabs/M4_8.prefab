@@ -101,6 +101,7 @@ GameObject:
   - component: {fileID: 7870192010600644672}
   - component: {fileID: 5536853875468645031}
   - component: {fileID: 3025739295358010174}
+  - component: {fileID: -2741093869606425328}
   m_Layer: 6
   m_Name: M4_8
   m_TagString: Untagged
@@ -200,7 +201,7 @@ MonoBehaviour:
   shootingDelay: 0.15
   bulletPerBurst: 1
   burstBulletsLeft: 0
-  spreadIntensity: 0.25
+  spreadIntensity: 0.175
   spreadIntensityCurrent: 0
   bulletPrefab: {fileID: 4674828264371071478, guid: 94da25bc51f239f498724cb8482ca322, type: 3}
   bulletSpawn: {fileID: 696669313376631102}
@@ -225,7 +226,7 @@ Animator:
   m_GameObject: {fileID: 2350962303821651486}
   m_Enabled: 0
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 732b9e6c0c644a24ca61dfc9acefa99d, type: 2}
+  m_Controller: {fileID: 9100000, guid: a85ca1cd57c099245b50834e448077bd, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -276,6 +277,33 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.0597421, y: 0.17664655, z: 0.7236116}
   m_Center: {x: -0.004013397, y: 0.008912883, z: 0.023460403}
+--- !u!54 &-2741093869606425328
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2350962303821651486}
+  serializedVersion: 4
+  m_Mass: 50
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 1
 --- !u!1 &3585376208340427459
 GameObject:
   m_ObjectHideFlags: 0

@@ -69,26 +69,29 @@ public class Weapon : MonoBehaviour
     {
         if (isActiveWeapon)
         {
-            if (Input.GetMouseButtonDown(1))
+            if (Input.GetMouseButtonDown(1)) 
             {
-                if (bulletsLeft == 0)
+                isADS = !isADS; 
+
+                if (isADS)
                 {
-                    animator.SetTrigger("enterADS(empty)");
+                    if (bulletsLeft == 0)
+                    {
+                        animator.SetTrigger("enterADS(empty)");
+                    }
+                    else
+                    {
+                        animator.SetTrigger("enterADS");
+                    }
                 }
                 else
                 {
-                    animator.SetTrigger("enterADS");
+                    animator.SetTrigger("exitADS");
                 }
-                isADS = true;
-            }
-
-            if (Input.GetMouseButtonUp(1))
-            {
-                animator.SetTrigger("exitADS");
-                isADS = false;
             }
 
 
+            GetComponent<BoxCollider>().enabled = false;
             GetComponent<Outline>().enabled = false;
 
             if (currentShootingMode == ShootingMode.Auto)

@@ -273,6 +273,7 @@ GameObject:
   - component: {fileID: 7230671147302257916}
   - component: {fileID: 8018605316881015566}
   - component: {fileID: 157764552069428056}
+  - component: {fileID: 5559787498185945227}
   m_Layer: 6
   m_Name: M249
   m_TagString: Untagged
@@ -393,6 +394,7 @@ MonoBehaviour:
   bulletPerBurst: 1
   burstBulletsLeft: 0
   spreadIntensity: 1
+  spreadIntensityCurrent: 0
   bulletPrefab: {fileID: 4674828264371071478, guid: 94da25bc51f239f498724cb8482ca322, type: 3}
   bulletSpawn: {fileID: 5037817276221465097}
   bulletVelocity: 915
@@ -446,6 +448,33 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!54 &5559787498185945227
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5851591973875413465}
+  serializedVersion: 4
+  m_Mass: 50
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 1
 --- !u!1 &6901712454160700157
 GameObject:
   m_ObjectHideFlags: 0

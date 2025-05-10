@@ -304,6 +304,8 @@ GameObject:
   - component: {fileID: 5731964970826001952}
   - component: {fileID: 7875445059195676764}
   - component: {fileID: 2227931168970555275}
+  - component: {fileID: 1531654456476282445}
+  - component: {fileID: -7530851208951863164}
   m_Layer: 6
   m_Name: AK74
   m_TagString: Untagged
@@ -395,13 +397,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3478f7ba163d80245a4a23a572d01548, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isActiveWeapon: 1
+  isActiveWeapon: 0
   isShooting: 0
   readyToShot: 0
   shootingDelay: 0.15
   bulletPerBurst: 1
   burstBulletsLeft: 0
-  spreadIntensity: 0.25
+  spreadIntensity: 0.175
+  spreadIntensityCurrent: 0
   bulletPrefab: {fileID: 4674828264371071478, guid: 94da25bc51f239f498724cb8482ca322, type: 3}
   bulletSpawn: {fileID: 3813553876313371451}
   bulletVelocity: 700
@@ -441,9 +444,9 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4356141656134077826}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: a3b7208cf0a070c4688ec082588f052b, type: 2}
+  m_Controller: {fileID: 9100000, guid: 42df6b92c41e99f4096a4f5b55840511, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -455,6 +458,54 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!65 &1531654456476282445
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4356141656134077826}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.033782385, y: 0.1667685, z: 0.7707256}
+  m_Center: {x: -0.0017576693, y: -0.0362125, z: -0.06259711}
+--- !u!54 &-7530851208951863164
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4356141656134077826}
+  serializedVersion: 4
+  m_Mass: 50
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 1
 --- !u!1 &4546816078830052142
 GameObject:
   m_ObjectHideFlags: 0
