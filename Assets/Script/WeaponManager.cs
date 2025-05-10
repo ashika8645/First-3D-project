@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -9,6 +10,12 @@ public class WeaponManager : MonoBehaviour
 
     public GameObject activeWeaponSlot;
 
+    [Header("Ammo")]
+    public int totalRifleAmmo = 0;
+    public int totalPistolAmmo = 0;
+    public int totalSMGAmmo = 0;
+    public int totalShortgunAmmo = 0;
+    public int totalSniperAmmo = 0;
     private void Awake()
     {
         if (instance != null && instance != this)
@@ -50,9 +57,35 @@ public class WeaponManager : MonoBehaviour
         }
     }
 
-    public void pickedupWeapon(GameObject pickedupWeapon)
+    public void PickedupWeapon(GameObject pickedupWeapon)
     {
         AddWeaponInToActiveSlot(pickedupWeapon);
+    }
+
+    public void PickedupAmmo(AmmoBox ammo)
+    {
+        switch (ammo.ammoType)
+        {
+            case AmmoBox.AmmoType.PistolAmmo:
+                totalPistolAmmo += ammo.ammoAmount;
+                break;
+
+            case AmmoBox.AmmoType.RifeAmmo:
+                totalRifleAmmo += ammo.ammoAmount;
+                break;
+
+            case AmmoBox.AmmoType.SMGAmmo:
+                totalSMGAmmo += ammo.ammoAmount;
+                break;
+
+            case AmmoBox.AmmoType.ShortgunAmmo:
+                totalShortgunAmmo += ammo.ammoAmount;
+                break;
+
+            case AmmoBox.AmmoType.SniperAmmo:
+                totalSniperAmmo += ammo.ammoAmount; 
+                break;
+        }
     }
 
     public void AddWeaponInToActiveSlot(GameObject pickupedWeapon)
@@ -123,5 +156,45 @@ public class WeaponManager : MonoBehaviour
         }
     }
 
+    internal void DecreaseTotalAmmo(int bulletToDecrease, Weapon.WeaponModel thisWeaponModel)
+    {
+        switch (thisWeaponModel)
+        {
+            case Weapon.WeaponModel.M4_8:
+                totalRifleAmmo -= bulletToDecrease;
+                break;
 
+            case Weapon.WeaponModel.Pistol1911:
+                totalPistolAmmo -= bulletToDecrease;
+                break;
+
+            case Weapon.WeaponModel.AK47:
+                totalRifleAmmo -= bulletToDecrease;
+                break;
+
+            case Weapon.WeaponModel.Uzi:
+                totalSMGAmmo -= bulletToDecrease;
+                break;
+        }
+    }
+    public int CheckAmmoLeftFor(Weapon.WeaponModel thisWeaponModel)
+    {
+        switch (thisWeaponModel)
+        {
+            case Weapon.WeaponModel.Pistol1911:
+                return totalPistolAmmo;
+
+            case Weapon.WeaponModel.M4_8:
+                return totalRifleAmmo;
+
+            case Weapon.WeaponModel.AK47:
+                return totalRifleAmmo;
+
+            case Weapon.WeaponModel.Uzi:
+                return totalSMGAmmo;
+
+            default:
+                return 0;
+        }
+    }
 }
